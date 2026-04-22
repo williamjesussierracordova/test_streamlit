@@ -80,10 +80,10 @@ CARD_DESC = {
         "#9B5DE5",
     ),
     "Cursos dashboard": (
-        "Vista integral por estudiante: notas, asistencia, pagos, "
-        "actividad LMS y alertas de riesgo personalizadas.",
+        "Enfocado en evaluar el desempeño general, la asistencia "
+        "y la distribución de notas por asignatura mediante filtros interactivos.",
         "#9B5DE5",
-    ),
+    )
     # "Rendimiento Académico": ("Análisis de notas y aprobación por curso.", "#457B9D"),
 }
 
