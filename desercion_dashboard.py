@@ -243,7 +243,7 @@ def show():
     with c1:
         _metric_card("Total Estudiantes", f"{total_students:,}", color=COLOR_INFO)
     with c2:
-        _metric_card("Desertores totales unicos", f"{total_dropout:, color="#E34234"
+        _metric_card("Desertores totales unicos", f"{total_dropout:,}", color=COLOR_WARNING
                     #  delta=f"{tasa_desercion:.1f}% del total", color=COLOR_PRIMARY
                      )
     with c3:
