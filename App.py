@@ -27,7 +27,7 @@ import streamlit as st
 # ─────────────────────────────────────────────
 
 st.set_page_config(
-    page_title="Analítica Académica",
+    page_title="Universidad Horizonte",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -56,7 +56,7 @@ import Vista_Cursos
 MENU = {
     "📊 Analítica Estudiantil": [
         ("📉", "Deserción Estudiantil",   Vista_Desercion_Estudiantil),
-        ("🧑‍🎓", "Perfil 360° del Estudiante", Vista_Estudiante),
+        ("🧑‍🎓", "Perfil del Estudiante", Vista_Estudiante),
         ("📈", "Cursos", Vista_Cursos),
     ],
     # "💳 Gestión Financiera": [
@@ -74,12 +74,12 @@ CARD_DESC = {
         "alertas tempranas y engagement en el LMS.",
         "#E63946",
     ),
-    "Perfil 360° del Estudiante": (
+    "Perfil del Estudiante": (
         "Vista integral por estudiante: notas, asistencia, pagos, "
         "actividad LMS y alertas de riesgo personalizadas.",
         "#9B5DE5",
     ),
-    "Cursos dashboard": (
+    "Cursos": (
         "Enfocado en evaluar el desempeño general, la asistencia "
         "y la distribución de notas por asignatura mediante filtros interactivos.",
         "#9B5DE5",
