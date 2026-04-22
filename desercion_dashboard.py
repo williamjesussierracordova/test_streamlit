@@ -212,7 +212,7 @@ def show():
             "Los filtros aplican a las secciones de Distribución y Evolución.</p>",
             unsafe_allow_html=True,
         )
-        fc1, fc2, fc3 = st.columns([2, 2, 1])
+        fc1, fc2 = st.columns([2, 2])
         with fc1:
             terms_opts = sorted(dropout["term"].unique().tolist())
             sel_terms = st.multiselect(
@@ -224,13 +224,7 @@ def show():
             sel_reasons = st.multiselect(
                 "🔍 Motivo de deserción", reasons_opts,
                 default=reasons_opts, key="des_reasons"
-            )
-        with fc3:
-            st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
-            if st.button("↺ Limpiar", use_container_width=True, key="des_clear"):
-                st.session_state.des_terms   = terms_opts
-                st.session_state.des_reasons = reasons_opts
-                st.rerun()
+            )        
 
     df_filt = dropout_merged[
         (dropout_merged["term"].isin(sel_terms)) &
