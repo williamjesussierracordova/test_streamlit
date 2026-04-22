@@ -282,8 +282,8 @@ def show():
                      labels={"term": "Ciclo", "cantidad": "Estudiantes", "reason": "Motivo"},
                      template=PLOTLY_TPL, text_auto=True)
         fig.update_layout(title_font_size=15, height=340,
-                          margin=dict(t=120, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02))
+                          margin=dict(t=50, b=20, l=20, r=20),
+                          legend=dict(orientation="h", yanchor="bottom", y=0.58))
         st.plotly_chart(fig, use_container_width=True)
 
     # ════════════════════════════════════════
