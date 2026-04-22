@@ -93,7 +93,7 @@ st.markdown("""
 MENU = {
     "📊 Analítica Estudiantil": [
         ("📉", "Deserción Estudiantil",  general_dashboard),
-        # ("📈", "Rendimiento Académico", rendimiento_dashboard),
+        ("📈", "Rendimiento Académico", general_dashboard),
     ],
     # "💳 Gestión Financiera": [
     #     ("💰", "Pagos y Morosidad",     pagos_dashboard),
