@@ -1,5 +1,5 @@
 """
-Dashboard: Perfil 360° del Estudiante
+Dashboard: Perfil del Estudiante
 Página para invocar desde el archivo maestro de Streamlit.
 Conexión a MongoDB via st.secrets["mongo"]["uri"]
 """
@@ -376,14 +376,14 @@ def show():
     st.markdown(CSS, unsafe_allow_html=True)
 
     # ── NAV BAR ──────────────────────────────
-    nav_bar("Perfil 360° del Estudiante", "🧑‍🎓")
+    nav_bar("Perfil del Estudiante", "🧑‍🎓")
 
     # ── HEADER ───────────────────────────────
     st.markdown("""
     <div style="background:linear-gradient(90deg,#457B9D,#9B5DE5);
                 border-radius:12px; padding:20px 28px; margin-bottom:20px;">
         <h1 style="color:white; margin:0; font-size:1.8rem;">
-            🧑‍🎓 Perfil 360° del Estudiante
+            🧑‍🎓 Perfil del Estudiante
         </h1>
         <p style="color:#dde; margin:4px 0 0 0; font-size:0.9rem;">
             Vista integral de rendimiento, pagos, actividad y riesgo · Ingeniería de Software
@@ -653,10 +653,10 @@ def show():
 # ─────────────────────────────────────────────
 if __name__ == "__main__":
     st.set_page_config(
-        page_title="Perfil 360° del Estudiante",
+        page_title="Perfil del Estudiante",
         page_icon="🧑‍🎓",
         layout="wide",
     )
     if "active_page" not in st.session_state:
-        st.session_state.active_page = "🧑‍🎓  Perfil 360°"
+        st.session_state.active_page = "🧑‍🎓  Perfil"
     show()
