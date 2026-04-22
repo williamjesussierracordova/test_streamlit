@@ -248,11 +248,11 @@ def show():
                      )
     with c3:
         _metric_card("Deserción Financiera", f"{fin:,}",
-                     delta=f"{fin/dropout_true*100:.0f}% de desertores" if total_dropout else "",
+                     delta=f"{fin/len(dropout_true)*100:.0f}% de desertores" if total_dropout else "",
                      color=COLOR_WARNING)
     with c4:
         _metric_card("Deserción Académica", f"{aca:,}",
-                     delta=f"{aca/dropout_true*100:.0f}% de desertores" if total_dropout else "",
+                     delta=f"{aca/len(dropout_true)*100:.0f}% de desertores" if total_dropout else "",
                      color=COLOR_PURPLE)
 
     # ════════════════════════════════════════
