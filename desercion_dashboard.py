@@ -318,7 +318,7 @@ def show():
                      template=PLOTLY_TPL, text_auto=".1f")
         fig.update_layout(title_font_size=15, height=340,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=0.95),
+                          legend=dict(orientation="h", yanchor="bottom", y=1.00, x=0.80),
                           yaxis=dict(autorange="reversed"))
         st.plotly_chart(fig, use_container_width=True)
 
