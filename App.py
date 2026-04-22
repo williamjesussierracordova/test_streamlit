@@ -1,5 +1,6 @@
 # app_maestro.py
 import general
+import streamlit as st
 
 page = st.navigation({
     "Dashboards": [
