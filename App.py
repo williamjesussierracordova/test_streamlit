@@ -42,6 +42,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 
 import desercion_dashboard
+import perfil360_dashboard
 # import rendimiento_dashboard
 # import pagos_dashboard
 # import engagement_dashboard
@@ -53,7 +54,8 @@ import desercion_dashboard
 
 MENU = {
     "📊 Analítica Estudiantil": [
-        ("📉", "Deserción Estudiantil", desercion_dashboard),
+        ("📉", "Deserción Estudiantil",   desercion_dashboard),
+        ("🧑‍🎓", "Perfil 360° del Estudiante", perfil360_dashboard),
         # ("📈", "Rendimiento Académico", rendimiento_dashboard),
     ],
     # "💳 Gestión Financiera": [
@@ -70,6 +72,11 @@ CARD_DESC = {
         "Monitorea tasas de deserción, motivos académicos y financieros, "
         "alertas tempranas y engagement en el LMS.",
         "#E63946",
+    ),
+    "Perfil 360° del Estudiante": (
+        "Vista integral por estudiante: notas, asistencia, pagos, "
+        "actividad LMS y alertas de riesgo personalizadas.",
+        "#9B5DE5",
     ),
     # "Rendimiento Académico": ("Análisis de notas y aprobación por curso.", "#457B9D"),
 }
