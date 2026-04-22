@@ -318,7 +318,7 @@ def show():
                      template=PLOTLY_TPL, text_auto=".1f")
         fig.update_layout(title_font_size=15, height=340,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02),
+                          legend=dict(orientation="h", yanchor="bottom", y=0.95),
                           yaxis=dict(autorange="reversed"))
         st.plotly_chart(fig, use_container_width=True)
 
@@ -340,7 +340,7 @@ def show():
                          template=PLOTLY_TPL, trendline="ols")
         fig.update_layout(title_font_size=15, height=350,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02),
+                          legend=dict(orientation="h", yanchor="bottom", y=0.95),
                           xaxis_tickformat=".0%")
         st.plotly_chart(fig, use_container_width=True)
 
@@ -358,7 +358,7 @@ def show():
                      template=PLOTLY_TPL, text_auto=True)
         fig.update_layout(title_font_size=15, height=350,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02))
+                          legend=dict(orientation="h", yanchor="bottom", y=0.95))
         st.plotly_chart(fig, use_container_width=True)
 
     # ════════════════════════════════════════
@@ -383,7 +383,7 @@ def show():
                      template=PLOTLY_TPL, text_auto=True)
         fig.update_layout(title_font_size=15, height=340,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02))
+                          legend=dict(orientation="h", yanchor="bottom", y=0.95))
         st.plotly_chart(fig, use_container_width=True)
 
     with col_h:
@@ -397,7 +397,7 @@ def show():
                       template=PLOTLY_TPL)
         fig.update_layout(title_font_size=15, height=340,
                           margin=dict(t=50, b=20, l=20, r=20),
-                          legend=dict(orientation="h", yanchor="bottom", y=1.02),
+                          legend=dict(orientation="h", yanchor="bottom", y=0.95),
                           xaxis_tickangle=-30)
         st.plotly_chart(fig, use_container_width=True)
 
