@@ -253,11 +253,9 @@ if active == HOME_KEY:
         "<h3 style='color:#EAEAEA; font-size:1rem; margin-bottom:12px;'>📋 Estado del Sistema</h3>",
         unsafe_allow_html=True,
     )
-    i1, i2, i3 = st.columns(3)
+    i1, i3 = st.columns(3)
     with i1:
         st.metric("Dashboards activos",  sum(len(p) for p in MENU.values()))
-    with i2:
-        st.metric("Categorías",          len(MENU))
     with i3:
         st.metric("Fuente de datos",     "MongoDB")
 
