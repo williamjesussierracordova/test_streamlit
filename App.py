@@ -200,10 +200,10 @@ if active == HOME_KEY:
                 border-radius:16px; padding:40px 48px; margin-bottom:32px;
                 border:1px solid #2a2a4a;">
         <h1 style="color:#EAEAEA; font-size:2.2rem; margin:0 0 8px 0;">
-            👋 Bienvenido al Sistema de Analítica
+            👋 Bienvenido al Sistema de la Universidad Nuevo Horizonte
         </h1>
         <p style="color:#8892a4; font-size:1rem; margin:0;">
-            Selecciona un dashboard en el menú lateral o usa las tarjetas de acceso rápido.
+            Selecciona un dashboard en las tarjetas de acceso rápido.
         </p>
     </div>
     """, unsafe_allow_html=True)
