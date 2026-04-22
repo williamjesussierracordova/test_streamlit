@@ -41,9 +41,9 @@ st.set_page_config(
 #    3. Agrégalo al diccionario MENU
 # ─────────────────────────────────────────────
 
-import desercion_dashboard
-import perfil360_dashboard
-import cursos_dashboard
+import Vista_Desercion_Estudiantil
+import Vista_Estudiante
+import Vista_Cursos
 # import rendimiento_dashboard
 # import pagos_dashboard
 # import engagement_dashboard
@@ -55,9 +55,9 @@ import cursos_dashboard
 
 MENU = {
     "📊 Analítica Estudiantil": [
-        ("📉", "Deserción Estudiantil",   desercion_dashboard),
-        ("🧑‍🎓", "Perfil 360° del Estudiante", perfil360_dashboard),
-        ("📈", "Cursos", cursos_dashboard),
+        ("📉", "Deserción Estudiantil",   Vista_Desercion_Estudiantil),
+        ("🧑‍🎓", "Perfil 360° del Estudiante", Vista_Estudiante),
+        ("📈", "Cursos", Vista_Cursos),
     ],
     # "💳 Gestión Financiera": [
     #     ("💰", "Pagos y Morosidad", pagos_dashboard),
