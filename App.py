@@ -43,6 +43,7 @@ st.set_page_config(
 
 import desercion_dashboard
 import perfil360_dashboard
+import cursos_dashboard
 # import rendimiento_dashboard
 # import pagos_dashboard
 # import engagement_dashboard
@@ -56,7 +57,7 @@ MENU = {
     "📊 Analítica Estudiantil": [
         ("📉", "Deserción Estudiantil",   desercion_dashboard),
         ("🧑‍🎓", "Perfil 360° del Estudiante", perfil360_dashboard),
-        # ("📈", "Rendimiento Académico", rendimiento_dashboard),
+        ("📈", "Cursos", cursos_dashboard),
     ],
     # "💳 Gestión Financiera": [
     #     ("💰", "Pagos y Morosidad", pagos_dashboard),
@@ -74,6 +75,11 @@ CARD_DESC = {
         "#E63946",
     ),
     "Perfil 360° del Estudiante": (
+        "Vista integral por estudiante: notas, asistencia, pagos, "
+        "actividad LMS y alertas de riesgo personalizadas.",
+        "#9B5DE5",
+    ),
+    "Cursos dashboard": (
         "Vista integral por estudiante: notas, asistencia, pagos, "
         "actividad LMS y alertas de riesgo personalizadas.",
         "#9B5DE5",
